@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: complete-production-e2e-deployment
+  name: web-project
 spec:
   replicas: 1
   selector:
-    matchLabels:   # Fix the typo here (matchLabels instead of matchLables)
-      app: complete-production-e2e-app
+    matchLabels:   
+      app:web-project-app
   template:
     metadata:
       labels: 
-        app: complete-production-e2e-app
+        app:web-project-app
     spec:
       containers:
-        - name: complete-production-e2e-app
+        - name:web-project-app
           image: firesofttech/complete-prodcution-e2e-pipeline:1.0.0-4
           resources:
             limits:
               memory: "256Mi"
               cpu: "500m"
           ports:
-            - containerPort: 8080  # Fix the typo here (containerPort instead of -containerPort)
+            - containerPort: 8080  
