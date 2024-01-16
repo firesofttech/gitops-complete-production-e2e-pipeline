@@ -6,7 +6,7 @@ metadata:
   name: web-project
   namespace: default  # Change to "default" if that's the intended namespace
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: web-project-app
