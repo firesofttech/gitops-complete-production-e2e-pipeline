@@ -6,14 +6,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:   
-      app:web-project-app
+      app: eb-project-app
   template:
     metadata:
       labels: 
-        app:web-project-app
+        app: web-project-app
     spec:
       containers:
-        - name:web-project-app
+        - name: web-project-app
           image: firesofttech/web-project:1.0.0-4
           resources:
             limits:
