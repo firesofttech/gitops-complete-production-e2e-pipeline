@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name:web-project-app
-          image: firesofttech/complete-prodcution-e2e-pipeline:1.0.0-4
+          image: firesofttech/docker pull firesofttech/web-project:1.0.0-4
           resources:
             limits:
               memory: "256Mi"
